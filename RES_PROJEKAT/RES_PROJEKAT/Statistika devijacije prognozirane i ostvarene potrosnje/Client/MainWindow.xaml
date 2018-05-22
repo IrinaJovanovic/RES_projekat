@@ -1,0 +1,31 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <ToolBar Margin="0,10,0,273">
+            <Label Content="Region"/>
+            <ComboBox Name="Regioni" Height="30" Width="50" ItemsSource="{Binding zem }"/>
+            <Label Content="Od"/>
+            <ComboBox Name="SatiOd" Height="30" Width="50" ItemsSource="{Binding sat}"/>
+            <Label Content="Do"/>
+            <ComboBox Name="SatiDo" Height="30" Width="50" ItemsSource="{Binding sat}"/>
+            <Button x:Name="Prikazi" Content="Prikazi" Height="31" VerticalAlignment="Top" Width="75" Click="Prikazi_Click"/>
+
+        </ToolBar>
+
+        <DataGrid Name="Tabela" HorizontalAlignment="Left" Height="263" Margin="10,46,0,0" VerticalAlignment="Top" Width="497">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Sat" Binding="{Binding sat }"/>
+                <DataGridTextColumn Header="Prognozirana potrosnja" Binding="{Binding prog}" />
+                <DataGridTextColumn Header="Ostvarena potrosnja" Binding="{Binding izm}" />
+                <DataGridTextColumn Header="Devijacija" Binding="{Binding dev}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

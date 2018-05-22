@@ -1,0 +1,10 @@
+C:\Users\DELL\Desktop\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Server\bin\Debug\Server.exe.config
+C:\Users\DELL\Desktop\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Server\bin\Debug\Server.exe
+C:\Users\DELL\Desktop\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Server\bin\Debug\Server.pdb
+C:\Users\DELL\Desktop\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Server\bin\Debug\Common.dll
+C:\Users\DELL\Desktop\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Server\bin\Debug\Common.pdb
+C:\Users\DELL\Desktop\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\DELL\Desktop\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Server\obj\Debug\Server.exe
+C:\Users\DELL\Desktop\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Server\obj\Debug\Server.pdb
