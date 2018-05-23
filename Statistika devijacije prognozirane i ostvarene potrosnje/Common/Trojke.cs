@@ -33,8 +33,8 @@ namespace Common
         //sredi devijaciju 
         double devijacija(int izm, int prog)
         {
-
-            return ((izm - prog)/prog)*100;
+             
+            return ((double)(izm - prog)/(double)prog)*100;
         }
     }
 }

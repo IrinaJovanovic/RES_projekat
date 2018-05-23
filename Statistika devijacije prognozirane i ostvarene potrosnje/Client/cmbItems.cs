@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,13 +14,20 @@ namespace Client
 
         public cmbItems()
         {
-            zem = new List<string>()
+            using (var reader = new StreamReader("zemlje.csv"))
             {
-                "SRB",
-                "BiH",
-                "CRO"
-            };
+                zem = new List<string>();
+                
+                while (!reader.EndOfStream)
+                {
+                    var line = reader.ReadLine();
+                   // var values = line.Split(';');
 
+                    zem.Add(line);
+                    
+                }
+            }
+            
             sat = new List<int>();
             for(int i = 1; i<=25; i++)
             {
