@@ -15,72 +15,76 @@ namespace Server
 {
     public class Service : IServer
     {
-        //konekcija sa bazom
-        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Vuk\\Documents\\Res_Projekat.mdf;Integrated Security=True;Connect Timeout=30");
-
         public byte[] vratiTrojku(string zem, int od, int to)
         {
             List<Trojke> ret = new List<Trojke>();
-             //ucitavamo u bazu. mislim da i sa ove dve funkcije nesto ne valja posto su tabele prazne
-            vratiPrognozirano();
-            vratiIzmereno();
-             //citamo iz baze, ono sto je u zagradi to je selekcija. mozda je drugacija sintaksa za ovaj sql u odnosu na oracleov, to bi trebalo proveriti
-            SqlDataAdapter sda = new SqlDataAdapter("select p.Sat, p.Prognozirano, i.izm from Table p cross join Izmereno i where  p.Sat >=" + od.ToString() + "and p.Sat <=" + to.ToString() + "order by sat; ", con);
+            List<Stavka> prog = new List<Stavka>();
+            List<Stavka> izm = new List<Stavka>();
 
-            DataTable dt = new DataTable();
-            sda.Fill(dt);  //iscitano iz tabele ubacujemo u datatable
+            prog = vratiPrognozirano(zem, od, to);
+            izm = vratiIzmereno(zem, od, to);
 
-            //iz datatable upisujemo u listu koju vracamo
-            foreach (DataRow dr in dt.Rows)
+            int i = 0;
+
+            foreach (Stavka x in izm)
             {
-                ret.Add(new Trojke(Int32.Parse(dr[0].ToString()), Int32.Parse(dr[1].ToString()), Int32.Parse(dr[2].ToString())));
+                ret.Add(new Trojke(x.SAT, prog[i].LOAD, x.LOAD));
+                i++;
             }
-             //pretvaramo u niz bajtova i saljemo klijentu
             var binFormatter = new BinaryFormatter();
             var mStream = new MemoryStream();
             binFormatter.Serialize(mStream, ret);
 
             return mStream.ToArray();
+
+            
         }
-        public void vratiPrognozirano()
+        public List<Stavka> vratiPrognozirano(string zem, int od, int to)
         {
-
+            List<Stavka> ret = new List<Stavka>();
             ListStavki listStavki = new ListStavki();
-
+            //List<Stavka> trojke = new List<Stavka>();
+            //Trojke trojke;
+            //50$
             XmlSerializer deserializer = new XmlSerializer(typeof(ListStavki));
             using (TextReader reader = new StreamReader("prog_2018_05_07.xml"))
             {
-                object obj = deserializer.Deserialize(reader);            //citamo iz xml
+                object obj = deserializer.Deserialize(reader);
                 listStavki = (ListStavki)obj;
                 Console.WriteLine();
             }
 
-            if (listStavki.Stavke.Count > 25 || listStavki.Stavke.Count < 23)
+
+            for (int i = 0; i < listStavki.Stavke.Count; i++)
             {
-                return;
-
+                if (listStavki.Stavke[i].SAT >= od && listStavki.Stavke[i].SAT <= to)
+                {
+                    ret.Add((Stavka)listStavki.Stavke[i]);
+                }
             }
+            //foreach(Stavka x in listStavki)
+            //{
+            //    if(x.OBLAST.Equals(zem))
+            //    {
+            //        if(x.SAT >= od && x.SAT <= to)
+            //        {
+            //            ret.Add(x);
+            //        }
+            //    }
 
-            con.Open();
-            string insert;    
+            //}
 
-            for (int i = 0; i < listStavki.Stavke.Count; i++)           //teoretski ubacujemo u tabele. i tu treba proveriti sintaksu za ubacivanje u tabele
-            {
-                //tu treba provera da li postoji
-                insert = "insert into Table values('" + listStavki.Stavke[i].OBLAST + "','" + listStavki.Stavke[i].SAT + "','" + listStavki.Stavke[i].LOAD + "')";
-                SqlCommand sc = new SqlCommand(insert,con);
+            return ret;
+        }
 
-            }
+        public List<Stavka> vratiIzmereno(string zem, int od, int to)
+        {
 
-            con.Close();
-
-        }  
-        
-        public void vratiIzmereno()
-        {               //sve isto kao u prethodnoj funkciji samo drugi xml
-
+            List<Stavka> ret = new List<Stavka>();
             ListStavki listStavki = new ListStavki();
-
+            //List<Stavka> trojke = new List<Stavka>();
+            //Trojke trojke;
+            //50$
             XmlSerializer deserializer = new XmlSerializer(typeof(ListStavki));
             using (TextReader reader = new StreamReader("ostv_2018_05_07.xml"))
             {
@@ -89,24 +93,40 @@ namespace Server
                 Console.WriteLine();
             }
 
-            if (listStavki.Stavke.Count > 25 || listStavki.Stavke.Count < 23)
-            {
-                return;
-
-            }
-
-            con.Open();
-
-            string insert;
 
             for (int i = 0; i < listStavki.Stavke.Count; i++)
             {
-                //tu treba provera
-                insert = "insert into Izmereno values('" + listStavki.Stavke[i].OBLAST + "','" + listStavki.Stavke[i].SAT + "','" + listStavki.Stavke[i].LOAD + "')";
-                SqlCommand sc = new SqlCommand(insert, con);
+                if (listStavki.Stavke[i].SAT >= od && listStavki.Stavke[i].SAT <= to)
+                {
+                    ret.Add((Stavka)listStavki.Stavke[i]);
+                }
             }
 
-            con.Close();
+            //List<Stavka> ret = new List<Stavka>();
+            //List<Stavka> trojke = new List<Stavka>();
+
+            //XmlSerializer deserializer = new XmlSerializer(typeof(List<Stavka>));
+            //using (TextReader reader = new StreamReader("ostv_2018_05_07.xml"))
+            //{
+            //    object obj = deserializer.Deserialize(reader);
+            //    trojke = (List<Stavka>)obj;
+
+            //}
+
+            //foreach (Stavka x in trojke)
+            //{
+            //    if (x.OBLAST.Equals(zem))
+            //    {
+            //        if (x.SAT >= od && x.SAT <= to)
+            //        {
+            //            ret.Add(x);
+            //        }
+            //    }
+
+            //}
+
+            return ret;
         }
+
     }
 }

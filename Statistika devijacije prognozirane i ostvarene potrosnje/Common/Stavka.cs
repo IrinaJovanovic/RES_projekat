@@ -27,7 +27,7 @@ namespace Common
             set { sat = value; }
         }
         [DataMember]
-        public int LOAD
+        public int LOAD //ucitano vreme 
         {
             get { return load; } 
             set { load = value; }
