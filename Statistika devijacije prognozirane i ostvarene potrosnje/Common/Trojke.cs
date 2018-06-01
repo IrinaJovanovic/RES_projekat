@@ -30,6 +30,11 @@ namespace Common
 
         }
 
+        public Trojke()
+        {
+        }
+
+
         //sredi devijaciju 
         double devijacija(int izm, int prog)
         {

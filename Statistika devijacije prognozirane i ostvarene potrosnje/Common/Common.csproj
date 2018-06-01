@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ListTrojke.cs" />
     <Compile Include="Stavka.cs" />
     <Compile Include="IServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

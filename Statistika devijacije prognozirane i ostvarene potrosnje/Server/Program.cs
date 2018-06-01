@@ -18,6 +18,7 @@ namespace Server
             new Uri("net.tcp://localhost:81/IServer"));
 
             svc.Open();
+            
             Console.ReadLine();
             svc.Close();
         }

@@ -17,20 +17,28 @@ namespace Server
     {
         public byte[] vratiTrojku(string zem, int od, int to)
         {
+            ListTrojke temp = new ListTrojke();
             List<Trojke> ret = new List<Trojke>();
-            List<Stavka> prog = new List<Stavka>();
-            List<Stavka> izm = new List<Stavka>();
-
-            prog = vratiPrognozirano(zem, od, to);
-            izm = vratiIzmereno(zem, od, to);
-
-            int i = 0;
-
-            foreach (Stavka x in izm)
+            upisiuBazu();
+            XmlSerializer deserializer = new XmlSerializer(typeof(ListTrojke));
+            using (TextReader reader = new StreamReader("bazaPodataka.xml"))
             {
-                ret.Add(new Trojke(x.SAT, prog[i].LOAD, x.LOAD));
-                i++;
+                object obj = deserializer.Deserialize(reader);
+                temp = (ListTrojke)obj;
+                Console.WriteLine();
             }
+
+
+            for (int i = 0; i < temp.Trojke.Count(); i++)
+            {
+                  if(temp.Trojke[i].sat >= od && temp.Trojke[i].sat <= to)
+                {
+                    ret.Add(new Trojke(temp.Trojke[i].sat, temp.Trojke[i].prog, temp.Trojke[i].izm));
+                }
+            }
+          
+
+            
             var binFormatter = new BinaryFormatter();
             var mStream = new MemoryStream();
             binFormatter.Serialize(mStream, ret);
@@ -39,7 +47,30 @@ namespace Server
 
             
         }
-        public List<Stavka> vratiPrognozirano(string zem, int od, int to)
+
+        public void upisiuBazu()
+        {
+            List<Stavka> prog = new List<Stavka>();
+            List<Stavka> izm = new List<Stavka>();
+            ListTrojke upis = new ListTrojke();
+
+            prog = vratiPrognozirano();
+            izm = vratiIzmereno();
+
+            int i = 0;
+            foreach (Stavka x in izm)
+            {
+                upis.Add(new Trojke(x.SAT, prog[i].LOAD, x.LOAD));
+                i++;
+            }
+
+            XmlSerializer serializer = new XmlSerializer(typeof(ListTrojke));
+            using (TextWriter textWriter = new StreamWriter("bazaPodataka.xml"))
+            {
+                serializer.Serialize(textWriter, upis);
+            }
+        }
+        public List<Stavka> vratiPrognozirano(/*string zem, int od, int to*/)
         {
             List<Stavka> ret = new List<Stavka>();
             ListStavki listStavki = new ListStavki();
@@ -57,10 +88,10 @@ namespace Server
 
             for (int i = 0; i < listStavki.Stavke.Count; i++)
             {
-                if (listStavki.Stavke[i].SAT >= od && listStavki.Stavke[i].SAT <= to)
-                {
+                //if (listStavki.Stavke[i].SAT >= od && listStavki.Stavke[i].SAT <= to)
+                //{
                     ret.Add((Stavka)listStavki.Stavke[i]);
-                }
+                //}
             }
             //foreach(Stavka x in listStavki)
             //{
@@ -77,7 +108,7 @@ namespace Server
             return ret;
         }
 
-        public List<Stavka> vratiIzmereno(string zem, int od, int to)
+        public List<Stavka> vratiIzmereno(/*string zem, int od, int to*/)
         {
 
             List<Stavka> ret = new List<Stavka>();
@@ -96,10 +127,10 @@ namespace Server
 
             for (int i = 0; i < listStavki.Stavke.Count; i++)
             {
-                if (listStavki.Stavke[i].SAT >= od && listStavki.Stavke[i].SAT <= to)
-                {
+                //if (listStavki.Stavke[i].SAT >= od && listStavki.Stavke[i].SAT <= to)
+                //{
                     ret.Add((Stavka)listStavki.Stavke[i]);
-                }
+                //}
             }
 
             //List<Stavka> ret = new List<Stavka>();

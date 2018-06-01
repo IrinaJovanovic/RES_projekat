@@ -51,21 +51,21 @@ C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Statistika devijacije
 C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client.csproj.GenerateResource.Cache
 C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client.exe
 C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client.pdb
-D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\bin\Debug\Client.exe.config
-D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\bin\Debug\Client.exe
-D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\bin\Debug\Client.pdb
-D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\bin\Debug\Common.dll
-D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\bin\Debug\Common.pdb
-D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
-D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\MainWindow.g.cs
-D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\App.g.cs
-D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client_MarkupCompile.cache
-D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client_MarkupCompile.lref
-D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\MainWindow.baml
-D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client.g.resources
-D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client.Properties.Resources.resources
-D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client.csproj.GenerateResource.cache
-D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
-D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client.csproj.CopyComplete
-D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client.exe
-D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client.pdb
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Client\bin\Debug\Client.exe.config
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Client\bin\Debug\Client.exe
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Client\bin\Debug\Client.pdb
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Client\bin\Debug\Common.dll
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Client\bin\Debug\Common.pdb
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\MainWindow.g.cs
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\App.g.cs
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client_MarkupCompile.cache
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client_MarkupCompile.lref
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\MainWindow.baml
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client.g.resources
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client.csproj.CopyComplete
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client.exe
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Client\obj\Debug\Client.pdb
