@@ -52,7 +52,11 @@ namespace Server
         {
             List<Stavka> prog = new List<Stavka>();
             List<Stavka> izm = new List<Stavka>();
+<<<<<<< HEAD
             ListTrojke upis = new ListTrojke();
+=======
+            List<Trojke> upis = new List<Trojke>();
+>>>>>>> e4a235354e6b0b927783313a3a1d44cc13795741
 
             prog = vratiPrognozirano();
             izm = vratiIzmereno();
