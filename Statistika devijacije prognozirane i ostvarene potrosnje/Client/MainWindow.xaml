@@ -18,14 +18,16 @@
 
         </ToolBar>
 
-        <DataGrid Name="Tabela" HorizontalAlignment="Left" Height="263" Margin="10,46,0,0" VerticalAlignment="Top" Width="497">
+        <DataGrid Name="Tabela" HorizontalAlignment="Left" Height="230" Margin="10,58,0,0" VerticalAlignment="Top" Width="497">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Sat" Binding="{Binding sat }"/>
-                <DataGridTextColumn Header="Prognozirana potrosnja" Binding="{Binding prog}" />
-                <DataGridTextColumn Header="Ostvarena potrosnja" Binding="{Binding izm}" />
-                <DataGridTextColumn Header="Devijacija" Binding="{Binding dev}"/>
+                <DataGridTextColumn Header="Sat" Width="*" Binding="{Binding sat }"/>
+                <DataGridTextColumn Header="Prognozirana potrosnja" Width="*" Binding="{Binding prog}" />
+                <DataGridTextColumn Header="Ostvarena potrosnja" Width="*" Binding="{Binding izm}" />
+                <DataGridTextColumn Header="Devijacija" Width="*" Binding="{Binding dev}"/>
             </DataGrid.Columns>
         </DataGrid>
+        <Label x:Name="label" Content="Prosecna devijacija:" HorizontalAlignment="Left" Margin="231,288,0,0" VerticalAlignment="Top" Height="31"/>
+        <Label x:Name="labelProsek" Content="" HorizontalAlignment="Left" Margin="348,288,0,0" VerticalAlignment="Top" Width="159"/>
 
     </Grid>
 </Window>

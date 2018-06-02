@@ -16,7 +16,8 @@ namespace Server
             svc.AddServiceEndpoint(typeof(IServer),
             new NetTcpBinding(),
             new Uri("net.tcp://localhost:81/IServer"));
-
+            Service a = new Service();
+            a.upisiuBazu();
             svc.Open();
             
             Console.ReadLine();

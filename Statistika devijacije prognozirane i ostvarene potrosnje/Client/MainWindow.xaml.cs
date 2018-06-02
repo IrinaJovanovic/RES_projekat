@@ -26,9 +26,7 @@ namespace Client
     public partial class MainWindow : Window
     {
 
-        //    public ObservableCollection<string> zem { get; set; }
-        //     enum zemlje { SRB, BiH, CRO}
-
+    
         
         public MainWindow()
         {
@@ -59,13 +57,36 @@ namespace Client
             mStream.Position = 0;
 
             List<Trojke> trojke = binFormatter.Deserialize(mStream) as List<Trojke>;
-
-            Tabela.Items.Clear();
-            
+            int j = Tabela.Items.Count;
+            for(int i =0; i < j; i++)
+            {
+                Tabela.Items.RemoveAt(0); 
+            }
+            double prosek = 0;
             foreach (Trojke x in trojke)
             {
                 Tabela.Items.Add(x);
+                prosek += x.dev;
             }
+
+
+            prosek /= Tabela.Items.Count;
+            labelProsek.Content = prosek.ToString();
+
+            if(prosek <= 0)
+            {
+                labelProsek.Background = Brushes.Green;
+            }                         
+            else if(prosek > 0)
+            {
+                labelProsek.Background = Brushes.Red;
+            }
+            else
+            {
+                labelProsek.Background = null;
+            }
+
+
 
         }
     }

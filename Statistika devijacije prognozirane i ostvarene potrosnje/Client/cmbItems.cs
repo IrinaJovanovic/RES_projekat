@@ -21,7 +21,7 @@ namespace Client
                 while (!reader.EndOfStream)
                 {
                     var line = reader.ReadLine();
-                   // var values = line.Split(';');
+                   
 
                     zem.Add(line);
                     
