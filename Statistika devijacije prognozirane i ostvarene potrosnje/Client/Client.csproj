@@ -98,6 +98,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BazaPodataka\BazaPodataka.csproj">
+      <Project>{c75b3afc-ef88-42ba-98e0-fd20d53dc6e9}</Project>
+      <Name>BazaPodataka</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{21a08c89-677a-4fd8-8c59-9abc3ff49220}</Project>
       <Name>Common</Name>

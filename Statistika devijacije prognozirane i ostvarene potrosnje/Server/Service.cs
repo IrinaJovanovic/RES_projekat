@@ -15,13 +15,14 @@ namespace Server
 {
     public class Service : IServer
     {
-        public byte[] vratiTrojku(string zem, int od, int to)
+     //   public List<string> ucitano = new List<string>();
+        public byte[] vratiTrojku(string ime , string zem, int od, int to)        //OVO TREBA DA URADITE
         {
             ListTrojke temp = new ListTrojke();
             List<Trojke> ret = new List<Trojke>();
 
             XmlSerializer deserializer = new XmlSerializer(typeof(ListTrojke));
-            using (TextReader reader = new StreamReader("bazaPodataka.xml"))
+            using (TextReader reader = new StreamReader("bazaPodataka_"+ime))
             {
                 object obj = deserializer.Deserialize(reader);
                 temp = (ListTrojke)obj;
@@ -48,71 +49,109 @@ namespace Server
             
         }
 
-        public void upisiuBazu()
+
+        public bool upisuBazu(string xml)
         {
-            List<Stavka> prog = new List<Stavka>();
-            List<Stavka> izm = new List<Stavka>();
-            ListTrojke upis = new ListTrojke();
-
-            prog = vratiPrognozirano();
-            izm = vratiIzmereno();
-
-            int i = 0;
-            foreach (Stavka x in izm)
+            BazaPodataka.Baza b = new BazaPodataka.Baza();
+            string s = xml.Substring(123);          //ako ti ne radi tu podesi broj tako da ti s bude tipa "ostv_2018_05_07.xml"
+                                                    //zato sto se xmlovi nalaze u folderu "XMLovi" u projektu
+            if(provera(s))                          //meni je 123
             {
-                upis.Add(new Trojke(x.OBLAST, x.SAT, prog[i].LOAD, x.LOAD));
-                i++;
+                b.upis(ucitajXML(s), s);
+                return true;
             }
 
-            XmlSerializer serializer = new XmlSerializer(typeof(ListTrojke));
-            using (TextWriter textWriter = new StreamWriter("bazaPodataka.xml"))
-            {
-                serializer.Serialize(textWriter, upis);
-            }
+
+            return false;
         }
-        public List<Stavka> vratiPrognozirano()
+
+        bool provera(string xml)             //proveravamo da li se xml vec nalazi u bazi. ako ne onda vracamo true i ubacujemo ga u listu
+        {                                    //a ako se nalazi vracamo false
+            BazaPodataka.Baza b = new BazaPodataka.Baza();
+           
+
+                foreach (string s in b.ucitano)
+                {
+                    if (s.Equals(xml))
+                    {
+
+                        return false;
+                    }
+                }
+
+            b.ucitano.Add(xml);
+            return true;
+        }
+
+
+        List<Stavka> ucitajXML(string xml)               //ucitavanje xml-a
         {
             List<Stavka> ret = new List<Stavka>();
             ListStavki listStavki = new ListStavki();
- 
+
             XmlSerializer deserializer = new XmlSerializer(typeof(ListStavki));
-            using (TextReader reader = new StreamReader("prog_2018_05_07.xml"))
-            {
-                object obj = deserializer.Deserialize(reader);
-                listStavki = (ListStavki)obj;
-                Console.WriteLine();
-            } 
-
-            for (int i = 0; i < listStavki.Stavke.Count; i++)
-            {
-
-                    ret.Add((Stavka)listStavki.Stavke[i]); 
-            }
-            return ret;
-        }
-
-        public List<Stavka> vratiIzmereno()
-        {
-
-            List<Stavka> ret = new List<Stavka>();
-            ListStavki listStavki = new ListStavki();
-             
-            XmlSerializer deserializer = new XmlSerializer(typeof(ListStavki));
-            using (TextReader reader = new StreamReader("ostv_2018_05_07.xml"))
+            using (TextReader reader = new StreamReader(xml))
             {
                 object obj = deserializer.Deserialize(reader);
                 listStavki = (ListStavki)obj;
                 Console.WriteLine();
             }
 
-
             for (int i = 0; i < listStavki.Stavke.Count; i++)
             {
-                
-                    ret.Add((Stavka)listStavki.Stavke[i]);
-               
+
+                ret.Add((Stavka)listStavki.Stavke[i]);
             }
             return ret;
-        }     
+        }
+
+       
+
+
+
+        //public List<Stavka> vratiPrognozirano()
+        //{
+        //    List<Stavka> ret = new List<Stavka>();
+        //    ListStavki listStavki = new ListStavki();
+
+        //    XmlSerializer deserializer = new XmlSerializer(typeof(ListStavki));
+        //    using (TextReader reader = new StreamReader("prog_2018_05_07.xml"))
+        //    {
+        //        object obj = deserializer.Deserialize(reader);
+        //        listStavki = (ListStavki)obj;
+        //        Console.WriteLine();
+        //    } 
+
+        //    for (int i = 0; i < listStavki.Stavke.Count; i++)
+        //    {
+
+        //            ret.Add((Stavka)listStavki.Stavke[i]); 
+        //    }
+        //    return ret;
+        //}
+
+        //public List<Stavka> vratiIzmereno()
+        //{
+
+        //    List<Stavka> ret = new List<Stavka>();
+        //    ListStavki listStavki = new ListStavki();
+
+        //    XmlSerializer deserializer = new XmlSerializer(typeof(ListStavki));
+        //    using (TextReader reader = new StreamReader("ostv_2018_05_07.xml"))
+        //    {
+        //        object obj = deserializer.Deserialize(reader);
+        //        listStavki = (ListStavki)obj;
+        //        Console.WriteLine();
+        //    }
+
+
+        //    for (int i = 0; i < listStavki.Stavke.Count; i++)
+        //    {
+
+        //            ret.Add((Stavka)listStavki.Stavke[i]);
+
+        //    }
+        //    return ret;
+        //}     
     }
 }

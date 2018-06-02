@@ -12,6 +12,8 @@ namespace Client
         public List<string> zem { get; set; }
         public List<int> sat { get; set; }
 
+        public List<string> datumi {get; set; }
+
         public cmbItems()
         {
             using (var reader = new StreamReader("zemlje.csv"))
@@ -33,6 +35,9 @@ namespace Client
             {
                 sat.Add(i);
             }
+
+            BazaPodataka.Baza b = new BazaPodataka.Baza();
+            datumi = b.ucitano;
         }
     }
 }
