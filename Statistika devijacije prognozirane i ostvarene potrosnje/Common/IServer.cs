@@ -12,7 +12,10 @@ namespace Common
     public interface IServer
     {
         [OperationContract]
-        byte[] vratiTrojku(string zem, int od, int to); //vraca vreme izmereno,prog,devijacija 
+        byte[] vratiTrojku(string ime, string zem, int od, int to); //vraca vreme izmereno,prog,devijacija 
+
+        [OperationContract]
+        bool upisuBazu(string xml);
 
         //[OperationContract]
         //List<Trojka> vratiIzmereno(string zem, int od, int to);

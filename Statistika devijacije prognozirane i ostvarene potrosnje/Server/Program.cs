@@ -12,15 +12,18 @@ namespace Server
     {
         static void Main(string[] args)
         {
+            BazaPodataka.Baza b = new BazaPodataka.Baza();
+            b.start();
+
             ServiceHost svc = new ServiceHost(typeof(Service));
             svc.AddServiceEndpoint(typeof(IServer),
             new NetTcpBinding(),
-            new Uri("net.tcp://localhost:81/IServer"));
-
-            svc.Open();
-            
+            new Uri("net.tcp://localhost:81/IServer"));           
+           
+            svc.Open();            
             Console.ReadLine();
             svc.Close();
+            
         }
     }
 }

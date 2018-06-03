@@ -52,6 +52,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BazaPodataka\BazaPodataka.csproj">
+      <Project>{c75b3afc-ef88-42ba-98e0-fd20d53dc6e9}</Project>
+      <Name>BazaPodataka</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{21A08C89-677A-4FD8-8C59-9ABC3FF49220}</Project>
       <Name>Common</Name>

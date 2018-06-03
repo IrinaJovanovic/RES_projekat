@@ -23,12 +23,11 @@ namespace Common
         {
             trojke = new List<Trojke>();
         }
-<<<<<<< HEAD
+
         public void Add(Trojke trojke)
         {
             this.trojke.Add(trojke);
         }
-=======
->>>>>>> e4a235354e6b0b927783313a3a1d44cc13795741
+
     }
 }

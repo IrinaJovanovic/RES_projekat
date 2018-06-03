@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
@@ -11,7 +12,8 @@ namespace Common
     [DataContract]
     public class Trojke
     {
-        
+        [DataMember]
+        public string reg { get; set; }
         [DataMember]
         public int sat { get; set; }
         [DataMember]
@@ -21,8 +23,9 @@ namespace Common
         [DataMember]
         public double dev { get; set; } //devijacija 
 
-        public Trojke(int Sat, int Prog, int Izm)
+        public Trojke(string Reg, int Sat, int Prog, int Izm)
         {
+            reg = Reg;
             sat = Sat;
             prog = Prog;
             izm = Izm;
@@ -33,13 +36,13 @@ namespace Common
         public Trojke()
         {
         }
-
-
-        //sredi devijaciju 
+        
         double devijacija(int izm, int prog)
         {
              
             return ((double)(izm - prog)/(double)prog)*100;
         }
+
+      
     }
 }

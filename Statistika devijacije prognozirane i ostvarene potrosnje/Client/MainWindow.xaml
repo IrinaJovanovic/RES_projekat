@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <ToolBar Margin="0,10,0,273">
+        <ToolBar Margin="0,45,0,238">
+            <Label Content="Izvestaj"/>
+            <ComboBox Name="Izvestaj" Height="30" Width="50" ItemsSource="{Binding datumi}"/>
             <Label Content="Region"/>
             <ComboBox Name="Regioni" Height="30" Width="50" ItemsSource="{Binding zem }"/>
             <Label Content="Od"/>
@@ -18,14 +20,21 @@
 
         </ToolBar>
 
-        <DataGrid Name="Tabela" HorizontalAlignment="Left" Height="263" Margin="10,46,0,0" VerticalAlignment="Top" Width="497">
+        <DataGrid Name="Tabela" HorizontalAlignment="Left" Height="194" Margin="10,94,0,0" VerticalAlignment="Top" Width="497">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Sat" Binding="{Binding sat }"/>
-                <DataGridTextColumn Header="Prognozirana potrosnja" Binding="{Binding prog}" />
-                <DataGridTextColumn Header="Ostvarena potrosnja" Binding="{Binding izm}" />
-                <DataGridTextColumn Header="Devijacija" Binding="{Binding dev}"/>
+                <DataGridTextColumn Header="Sat" Width="*" Binding="{Binding sat }"/>
+                <DataGridTextColumn Header="Prognozirana potrosnja" Width="*" Binding="{Binding prog}" />
+                <DataGridTextColumn Header="Ostvarena potrosnja" Width="*" Binding="{Binding izm}" />
+                <DataGridTextColumn Header="Devijacija" Width="*" Binding="{Binding dev}"/>
             </DataGrid.Columns>
         </DataGrid>
+        <Label x:Name="label" Content="Prosecna devijacija:" HorizontalAlignment="Left" Margin="231,288,0,0" VerticalAlignment="Top" Height="31"/>
+        <Label x:Name="labelProsek" Content="" HorizontalAlignment="Left" Margin="348,288,0,0" VerticalAlignment="Top" Width="159"/>
+        <Label x:Name="labelUvoz" Content="XML File:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="23"/>
+        <TextBox x:Name="textBoxUvoz" HorizontalAlignment="Left" Height="23" Margin="67,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="buttonNadji" Content="Nadji" HorizontalAlignment="Left" Margin="192,10,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="buttonNadji_Click"/>
+        <Button x:Name="buttonUvezi" Content="Uvezi" HorizontalAlignment="Left" Margin="268,10,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="buttonUvezi_Click"/>
+        <Label x:Name="labelUpozorenje" Content="" HorizontalAlignment="Left" Margin="348,10,0,0" VerticalAlignment="Top" Height="30" Width="140"/>
 
     </Grid>
 </Window>
