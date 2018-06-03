@@ -1,0 +1,34 @@
+C:\Users\DELL\Desktop\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Common\bin\Debug\Common.dll
+C:\Users\DELL\Desktop\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Common\bin\Debug\Common.pdb
+C:\Users\DELL\Desktop\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.dll
+C:\Users\DELL\Desktop\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.pdb
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.dll
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.pdb
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Common\bin\Debug\Common.dll
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\RES_PROJEKAT\RES_PROJEKAT\Statistika devijacije prognozirane i ostvarene potrosnje\Common\bin\Debug\Common.pdb
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Common\bin\Debug\Common.dll
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Common\bin\Debug\Common.pdb
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.dll
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.pdb
+D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Common\bin\Debug\Common.dll
+D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Common\bin\Debug\Common.pdb
+D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.dll
+D:\RES\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.pdb
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Common\bin\Debug\Common.dll
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Common\bin\Debug\Common.pdb
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.dll
+C:\Users\DELL\Desktop\POKAZI_Cas\RES_projekat-master (2)\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.pdb
+C:\Users\DELL\Desktop\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Common\bin\Debug\Common.dll
+C:\Users\DELL\Desktop\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Common\bin\Debug\Common.pdb
+C:\Users\DELL\Desktop\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.dll
+C:\Users\DELL\Desktop\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Common\obj\Debug\Common.pdb
