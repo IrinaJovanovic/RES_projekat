@@ -144,8 +144,8 @@ namespace Client
                 labelUpozorenje.Foreground = Brushes.Red;
             }
 
-            //Thread.Sleep(3000);
-            //labelUpozorenje.Content = "";
+            Thread.Sleep(3000);
+            labelUpozorenje.Content = "";
         }
     }
 }

@@ -125,23 +125,27 @@ namespace BazaPodataka
         {
             List<Stavka> Prog = new List<Stavka>();
             List<Stavka> Ostv = new List<Stavka>();
-            
 
-            
-            
+
+
+
             foreach (var prog in prognoziraneUBazi.Stavke)
             {
-               
-                if(prog.FAJLUCITAVANJA.Substring(4) == ime.Substring(4))
+
+                string s = prog.FAJLUCITAVANJA.Substring(4);
+                string a = ime.Substring(4);
+
+                if (prog.FAJLUCITAVANJA.Substring(4) == ime.Substring(4))
                 {
-                    if(prog.OBLAST == oblast)
+                    if (prog.OBLAST == oblast)
                     {
-                        if(prog.SAT >= datumOd && prog.SAT <= datumDo)
+                        if (prog.SAT >= datumOd && prog.SAT <= datumDo)
                         {
                             Prog.Add(prog);
                         }
                     }
                 }
+            }
                 //String[] splits = s.Split('_');
                 //item.FAJLUCITAVANJA
                 //TODO
@@ -170,7 +174,7 @@ namespace BazaPodataka
                     }
                 }
 
-            }
+            
             if (Prog.Count != Ostv.Count)
                 return null;
 
