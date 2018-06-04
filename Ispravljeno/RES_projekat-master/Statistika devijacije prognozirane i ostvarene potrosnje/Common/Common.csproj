@@ -42,12 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ListTrojke.cs" />
+    <Compile Include="ListDataStatistic.cs" />
     <Compile Include="Stavka.cs" />
-    <Compile Include="IServer.cs" />
+    <Compile Include="IService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ListStavki.cs" />
-    <Compile Include="Trojke.cs" />
+    <Compile Include="DataStatistic.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

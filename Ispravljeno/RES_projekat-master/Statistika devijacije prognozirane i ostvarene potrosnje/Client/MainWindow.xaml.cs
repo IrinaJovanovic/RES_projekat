@@ -44,12 +44,12 @@ namespace Client
         {
 
 
-            ChannelFactory<IServer> factory = new ChannelFactory<IServer>(
+            ChannelFactory<IService> factory = new ChannelFactory<IService>(
             new NetTcpBinding(),
             new EndpointAddress("net.tcp://localhost:81/IServer"));
-            IServer proxy = factory.CreateChannel();
+            IService proxy = factory.CreateChannel();
 
-            var source = proxy.vratiTrojku(Izvestaj.SelectedItem.ToString(), Regioni.SelectedItem.ToString(), Int32.Parse(SatiOd.SelectedItem.ToString()), Int32.Parse(SatiDo.SelectedItem.ToString()));
+            var source = proxy.returnStatistic(Izvestaj.SelectedItem.ToString(), Regioni.SelectedItem.ToString(), Int32.Parse(SatiOd.SelectedItem.ToString()), Int32.Parse(SatiDo.SelectedItem.ToString()));
 
             if (source == null)
             {
@@ -64,14 +64,17 @@ namespace Client
                 mStream.Write(source, 0, source.Length);
                 mStream.Position = 0;
 
-                List<Trojke> trojke = binFormatter.Deserialize(mStream) as List<Trojke>;
+                List<DataStatistic> trojke = binFormatter.Deserialize(mStream) as List<DataStatistic>;
+
                 int j = Tabela.Items.Count;
+
                 for (int i = 0; i < j; i++)
                 {
                     Tabela.Items.RemoveAt(0);
                 }
                 double prosek = 0;
-                foreach (Trojke x in trojke)
+
+                foreach (DataStatistic x in trojke)
                 {
                     Tabela.Items.Add(x);
                     prosek += x.dev;
@@ -106,19 +109,19 @@ namespace Client
 
 
 
-            // Set filter for file extension and default file extension 
+           
             dlg.DefaultExt = ".xml";
             dlg.Filter = "XML Files(*.xml)|*.xml";
 
 
-            // Display OpenFileDialog by calling ShowDialog method 
+            
             Nullable<bool> result = dlg.ShowDialog();
 
 
-            // Get the selected file name and display in a TextBox 
+           
             if (result == true)
             {
-                // Open document 
+                
                 string filename = dlg.FileName;
                 textBoxUvoz.Text = filename;
             }
@@ -126,10 +129,10 @@ namespace Client
 
         private void buttonUvezi_Click(object sender, RoutedEventArgs e)
         {
-            ChannelFactory<IServer> factory = new ChannelFactory<IServer>(
+            ChannelFactory<IService> factory = new ChannelFactory<IService>(
             new NetTcpBinding(),
             new EndpointAddress("net.tcp://localhost:1235/IServer"));
-            IServer proxy = factory.CreateChannel();
+            IService proxy = factory.CreateChannel();
             bool upit;
             upit = proxy.upisuBazu(textBoxUvoz.Text);
 

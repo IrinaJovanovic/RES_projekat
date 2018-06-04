@@ -9,34 +9,18 @@ using System.Xml.Serialization;
 
 namespace BazaPodataka
 {
-    public class Baza //Ovo mora da budes Singleton
+    public class Baza 
     {
-        public List<string> ucitano;    //lista u kojoj su imena ucitanih xmlova... po
+        public List<string> ucitano;         //lista u kojoj se nalaze imena ucitanih xml-ova
 
         private ListStavki prognoziraneUBazi;
         private ListStavki ostvareneUBazi;
 
-        private static Baza instance = new Baza(); //bilo private 
+        private static Baza instance = new Baza();  
 
         public static Baza Instance { get { return instance; } }
 
-        /*public void upis(List<Stavka> lista, string xml)                 //upisuje u bazu podataka ucitani fajl, tako da ce ucitani xml u bazi izgledati
-        {                                                                // "bazaPodataka_prog_yyyy_mm_dd.xml"
-            
-
-            ListStavki stavke = new ListStavki();
-            stavke.Stavke = lista;
-
-            ucitano.Add(xml);
-
-            XmlSerializer serializer = new XmlSerializer(typeof(ListStavki));
-            using (TextWriter textWriter = new StreamWriter("bazaPodataka_" + xml))
-            {
-                serializer.Serialize(textWriter, stavke);
-            }
-
-           
-        }*/
+     
 
         public void UpisiPrognozirano(List<Stavka> stavke, string xml)
         {
@@ -85,7 +69,7 @@ namespace BazaPodataka
             }
 
         }
-       // private Baza()
+      
        private Baza()
         {
 
@@ -108,7 +92,7 @@ namespace BazaPodataka
                     ucitano.Add(line);
 
                 }
-            }//ucitava u listu vec ucitane xml-ove da ne bismo ucitali opet isti.. 
+            }
 
             prognoziraneUBazi = new ListStavki();
             
@@ -121,7 +105,7 @@ namespace BazaPodataka
 
         }
 
-        public List<Trojke> VratiFiltriranoPodatke(string ime, String oblast, int datumOd, int datumDo)
+        public List<DataStatistic> VratiFiltriranoPodatke(string ime, String oblast, int datumOd, int datumDo)
         {
             List<Stavka> Prog = new List<Stavka>();
             List<Stavka> Ostv = new List<Stavka>();
@@ -146,19 +130,7 @@ namespace BazaPodataka
                     }
                 }
             }
-                //String[] splits = s.Split('_');
-                //item.FAJLUCITAVANJA
-                //TODO
-                /*
-                 * ako je datum ok
-                 * ako je oblast ok
-                 * 
-                 * 
-                 * */
-
-
-
-                //retVal.Add(napraviTrojkuOdStavke(item));
+               
 
                 foreach (var ostv in ostvareneUBazi.Stavke)
                 {
@@ -178,16 +150,16 @@ namespace BazaPodataka
             if (Prog.Count != Ostv.Count)
                 return null;
 
-            return napraviTrojkuOdStavke(Prog, Ostv);
+            return potrebniPodaci(Prog, Ostv);
         }
 
-        private List<Trojke> napraviTrojkuOdStavke(List<Stavka> prog, List<Stavka>ostv)
+        private List<DataStatistic> potrebniPodaci(List<Stavka> prog, List<Stavka>ostv)
         {
-            List<Trojke> ret = new List<Trojke>();
+            List<DataStatistic> ret = new List<DataStatistic>();
             int i = 0;
             foreach (var x in prog)
             {
-                ret.Add(new Trojke(x.OBLAST, x.SAT, x.LOAD, ostv[i].LOAD));
+                ret.Add(new DataStatistic(x.OBLAST, x.SAT, x.LOAD, ostv[i].LOAD));
                 i++;
 
             }

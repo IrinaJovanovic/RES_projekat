@@ -10,7 +10,7 @@ namespace Common
 {
     [Serializable]
     [DataContract]
-    public class Trojke
+    public class DataStatistic
     {
         [DataMember]
         public string reg { get; set; }
@@ -23,7 +23,7 @@ namespace Common
         [DataMember]
         public double dev { get; set; } //devijacija 
 
-        public Trojke(string Reg, int Sat, int Prog, int Izm)
+        public DataStatistic(string Reg, int Sat, int Prog, int Izm)
         {
             reg = Reg;
             sat = Sat;
@@ -33,7 +33,7 @@ namespace Common
 
         }
 
-        public Trojke()
+        public DataStatistic()
         {
         }
         

@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{06836681-7D15-4102-B03D-3E6D1BC3D826}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{21A08C89-677A-4FD8-8C59-9ABC3FF49220}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{7C042189-4488-4DEC-85A7-A1D00116426F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Server\Service.csproj", "{7C042189-4488-4DEC-85A7-A1D00116426F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazaPodataka", "BazaPodataka\BazaPodataka.csproj", "{C75B3AFC-EF88-42BA-98E0-FD20D53DC6E9}"
 EndProject
@@ -36,5 +36,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B984CC95-0067-4671-AA98-C2FE4729C9D3}
 	EndGlobalSection
 EndGlobal

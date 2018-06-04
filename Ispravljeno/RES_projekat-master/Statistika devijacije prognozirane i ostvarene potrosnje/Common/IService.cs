@@ -9,16 +9,14 @@ using System.Threading.Tasks;
 namespace Common
 {
     [ServiceContract]
-    public interface IServer
+    public interface IService
     {
         [OperationContract]
-        byte[] vratiTrojku(string ime, string zem, int od, int to); //vraca vreme izmereno,prog,devijacija 
+        byte[] returnStatistic(string ime, string zem, int od, int to);  
 
         [OperationContract]
         bool upisuBazu(string xml);
 
-        //[OperationContract]
-        //List<Trojka> vratiIzmereno(string zem, int od, int to);
-
+      
     }
 }

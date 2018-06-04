@@ -1,0 +1,12 @@
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Server\bin\Debug\Server.exe.config
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Server\bin\Debug\Server.exe
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Server\bin\Debug\Server.pdb
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Server\bin\Debug\BazaPodataka.dll
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Server\bin\Debug\Common.dll
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Server\bin\Debug\BazaPodataka.pdb
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Server\bin\Debug\Common.pdb
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Server\obj\Debug\Service.csprojResolveAssemblyReference.cache
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Server\obj\Debug\Service.csproj.CoreCompileInputs.cache
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Server\obj\Debug\Service.csproj.CopyComplete
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Server\obj\Debug\Server.exe
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\Server\obj\Debug\Server.pdb
