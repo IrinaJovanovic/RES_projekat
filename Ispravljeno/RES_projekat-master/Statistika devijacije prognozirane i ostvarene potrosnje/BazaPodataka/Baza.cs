@@ -18,7 +18,7 @@ namespace BazaPodataka
 
         private static Baza instance = new Baza(); //bilo private 
 
-        public static Baza Instance { get => instance;  }
+        public static Baza Instance { get { return instance; } }
 
         /*public void upis(List<Stavka> lista, string xml)                 //upisuje u bazu podataka ucitani fajl, tako da ce ucitani xml u bazi izgledati
         {                                                                // "bazaPodataka_prog_yyyy_mm_dd.xml"
@@ -131,8 +131,8 @@ namespace BazaPodataka
             
             foreach (var prog in prognoziraneUBazi.Stavke)
             {
-
-                if(prog.FAJLUCITAVANJA.Substring(3) == ime.Substring(3))
+               
+                if(prog.FAJLUCITAVANJA.Substring(4) == ime.Substring(4))
                 {
                     if(prog.OBLAST == oblast)
                     {
@@ -158,7 +158,7 @@ namespace BazaPodataka
 
                 foreach (var ostv in ostvareneUBazi.Stavke)
                 {
-                    if (ostv.FAJLUCITAVANJA.Substring(3) == ime.Substring(3))
+                    if (ostv.FAJLUCITAVANJA.Substring(4) == ime.Substring(4))
                     {
                         if (ostv.OBLAST == oblast)
                         {

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.ServiceModel;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -50,48 +51,52 @@ namespace Client
 
             var source = proxy.vratiTrojku(Izvestaj.SelectedItem.ToString(), Regioni.SelectedItem.ToString(), Int32.Parse(SatiOd.SelectedItem.ToString()), Int32.Parse(SatiDo.SelectedItem.ToString()));
 
-            if(source == null)
+            if (source == null)
             {
                 MessageBox.Show("Niste ucitali oba xmla");
-            }
 
-            var mStream = new MemoryStream();
-            var binFormatter = new BinaryFormatter();
-            
-            mStream.Write(source, 0, source.Length);
-            mStream.Position = 0;
-
-            List<Trojke> trojke = binFormatter.Deserialize(mStream) as List<Trojke>;
-            int j = Tabela.Items.Count;
-            for(int i =0; i < j; i++)
-            {
-                Tabela.Items.RemoveAt(0); 
-            }
-            double prosek = 0;
-            foreach (Trojke x in trojke)
-            {
-                Tabela.Items.Add(x);
-                prosek += x.dev;
-            }
-
-
-            prosek /= Tabela.Items.Count;
-            labelProsek.Content = prosek.ToString();
-
-            if(prosek <= 0)
-            {
-                labelProsek.Background = Brushes.Green;
-            }                         
-            else if(prosek > 0)
-            {
-                labelProsek.Background = Brushes.Red;
             }
             else
             {
-                labelProsek.Background = null;
-            }
+                var mStream = new MemoryStream();
+                var binFormatter = new BinaryFormatter();
 
-            
+                mStream.Write(source, 0, source.Length);
+                mStream.Position = 0;
+
+                List<Trojke> trojke = binFormatter.Deserialize(mStream) as List<Trojke>;
+                int j = Tabela.Items.Count;
+                for (int i = 0; i < j; i++)
+                {
+                    Tabela.Items.RemoveAt(0);
+                }
+                double prosek = 0;
+                foreach (Trojke x in trojke)
+                {
+                    Tabela.Items.Add(x);
+                    prosek += x.dev;
+                }
+
+
+                prosek /= Tabela.Items.Count;
+                labelProsek.Content = prosek.ToString();
+
+                if (prosek <= 0)
+                {
+                    labelProsek.Background = Brushes.Green;
+                }
+                else if (prosek > 0)
+                {
+                    labelProsek.Background = Brushes.Red;
+                }
+                else
+                {
+                    labelProsek.Background = null;
+                }
+
+               
+
+            }
 
         }
 
@@ -138,6 +143,9 @@ namespace Client
                 labelUpozorenje.Content = "XML je vec dodat!!";
                 labelUpozorenje.Foreground = Brushes.Red;
             }
+
+            //Thread.Sleep(3000);
+            //labelUpozorenje.Content = "";
         }
     }
 }
