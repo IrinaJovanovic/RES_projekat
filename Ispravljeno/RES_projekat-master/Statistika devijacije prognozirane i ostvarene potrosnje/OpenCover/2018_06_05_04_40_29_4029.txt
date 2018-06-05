@@ -1,0 +1,2 @@
+TestBazaPodat.TestBaza.TestUpisiPrognoziranoNull
+TestBazaPodat.TestBaza.TestUpisiPrognoziranoOK

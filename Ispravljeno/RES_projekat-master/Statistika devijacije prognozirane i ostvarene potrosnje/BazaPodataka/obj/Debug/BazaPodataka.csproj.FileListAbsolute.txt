@@ -30,3 +30,6 @@ D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije progno
 D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\BazaPodataka\obj\Debug\BazaPodataka.csproj.CopyComplete
 D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\BazaPodataka\obj\Debug\BazaPodataka.dll
 D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\BazaPodataka\obj\Debug\BazaPodataka.pdb
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\BazaPodataka\bin\Debug\nunit.framework.dll
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\BazaPodataka\bin\Debug\nunit.framework.pdb
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\BazaPodataka\bin\Debug\nunit.framework.xml

@@ -50,7 +50,8 @@ namespace BazaPodataka
         private void Serializuj(ListStavki lista, String imeFajla)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(ListStavki));
-            using (TextWriter textWriter = new StreamWriter("bazaPodataka_" + imeFajla))
+            string path = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), @"..\..\..\BazaPodataka\bin\Debug\bazaPodataka_" + imeFajla));
+            using (TextWriter textWriter = new StreamWriter(path))
             {
                 serializer.Serialize(textWriter, lista);
             }
@@ -60,12 +61,13 @@ namespace BazaPodataka
             try
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(ListStavki));
-                string path = Directory.GetCurrentDirectory() + "bazaPodataka_" + imeFajla;
+                string path = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), @"..\..\..\BazaPodataka\bin\Debug\bazaPodataka_" + imeFajla));
+                // string path= Directory.GetDirectories
                 FileStream fileStream = new FileStream(path, FileMode.Open);
                 lista = (ListStavki)(serializer.Deserialize(fileStream));
             }catch(Exception ex)
             {
-             
+                Console.WriteLine(ex.ToString());
             }
 
         }
@@ -116,9 +118,6 @@ namespace BazaPodataka
             foreach (var prog in prognoziraneUBazi.Stavke)
             {
 
-                string s = prog.FAJLUCITAVANJA.Substring(4);
-                string a = ime.Substring(4);
-
                 if (prog.FAJLUCITAVANJA.Substring(4) == ime.Substring(4))
                 {
                     if (prog.OBLAST == oblast)
@@ -130,9 +129,8 @@ namespace BazaPodataka
                     }
                 }
             }
-               
 
-                foreach (var ostv in ostvareneUBazi.Stavke)
+            foreach (var ostv in ostvareneUBazi.Stavke)
                 {
                     if (ostv.FAJLUCITAVANJA.Substring(4) == ime.Substring(4))
                     {

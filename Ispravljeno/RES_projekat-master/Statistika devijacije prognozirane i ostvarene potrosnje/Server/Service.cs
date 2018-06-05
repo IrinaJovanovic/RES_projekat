@@ -74,7 +74,7 @@ namespace Server
             return false;
         }
 
-        private bool prongozirana(string s)
+        public bool prongozirana(string s)
         {
             String[] splits = s.Split('_');
             if(splits[0].Equals("prog"))
@@ -84,7 +84,7 @@ namespace Server
             return false;
         }
 
-        bool provera(string xml)                             //proveravamo da li se xml vec nalazi u bazi. ako ne onda vracamo true i ubacujemo ga u listu
+        public bool provera(string xml)                             //proveravamo da li se xml vec nalazi u bazi. ako ne onda vracamo true i ubacujemo ga u listu
 
         {                                                  
             BazaPodataka.Baza b = BazaPodataka.Baza.Instance;
@@ -105,7 +105,7 @@ namespace Server
 
 
 
-        List<Stavka> ucitajXML(string xml)               
+        public List<Stavka> ucitajXML(string xml)               
         {
             string vreme = DateTime.Now.ToString("dd:MM:yyyy");
 
@@ -136,7 +136,7 @@ namespace Server
             return ret;
         }
 
-        private bool stavkeNisuKorektne(ListStavki listStavki)
+       public bool stavkeNisuKorektne(ListStavki listStavki)
         {
             
 

@@ -146,9 +146,7 @@ namespace Client
                 labelUpozorenje.Content = "XML je vec dodat!!";
                 labelUpozorenje.Foreground = Brushes.Red;
             }
-
-            Thread.Sleep(3000);
-            labelUpozorenje.Content = "";
+        
         }
     }
 }
