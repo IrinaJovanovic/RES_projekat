@@ -1,7 +1,0 @@
-C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\BazaPodataka\bin\Debug\BazaPodataka.dll
-C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\BazaPodataka\bin\Debug\BazaPodataka.pdb
-C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\BazaPodataka\bin\Debug\Common.dll
-C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\BazaPodataka\bin\Debug\Common.pdb
-C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\BazaPodataka\obj\Debug\BazaPodataka.csprojResolveAssemblyReference.cache
-C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\BazaPodataka\obj\Debug\BazaPodataka.dll
-C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Statistika devijacije prognozirane i ostvarene potrosnje\BazaPodataka\obj\Debug\BazaPodataka.pdb
