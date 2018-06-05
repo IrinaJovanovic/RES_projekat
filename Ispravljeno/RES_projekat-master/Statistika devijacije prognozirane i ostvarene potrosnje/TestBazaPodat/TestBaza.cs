@@ -15,6 +15,7 @@ namespace TestBazaPodat
         [Test]
         [TestCase(null, null)]
         [TestCase(null, "prog_2018_05_07.xml")]
+        [ExpectedException(typeof(TypeInitializationException))]
 
         public void TestUpisiPrognoziranoNull(List<Stavka> asd, string s)
         {
@@ -25,13 +26,15 @@ namespace TestBazaPodat
 
         }
 
-        [Test]
+        
 
+        [Test]
+        [ExpectedException(typeof(TypeInitializationException))]
         public void TestUpisiPrognoziranoOK()
         {
             BazaPodataka.Baza b = Baza.Instance;
             List<Stavka> stavke = null;
-            b.UpisiPrognozirano(stavke, "");
+            b.UpisiPrognozirano(stavke, "prog_2018_05_07.xml");
 
         }
     }

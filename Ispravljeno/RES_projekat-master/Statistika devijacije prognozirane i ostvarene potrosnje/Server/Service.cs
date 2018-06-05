@@ -18,6 +18,13 @@ namespace Server
      
         public byte[] returnStatistic(string ime , string zem, int od, int to)       
         {
+            if(ime == null || zem == null || od == null || to == null)
+                throw new ArgumentNullException();
+
+            if(od <= 0 || to >= 25)
+                throw new ArgumentOutOfRangeException();
+
+
             ListDataStatistic temp = new ListDataStatistic();
             List<DataStatistic> ret = new List<DataStatistic>();
 
@@ -76,6 +83,8 @@ namespace Server
 
         public bool prongozirana(string s)
         {
+            if (s == null)
+                throw  new ArgumentNullException();
             String[] splits = s.Split('_');
             if(splits[0].Equals("prog"))
             {
@@ -138,7 +147,8 @@ namespace Server
 
        public bool stavkeNisuKorektne(ListStavki listStavki)
         {
-            
+            if(listStavki == null)
+                throw  new ArgumentNullException();
 
             Dictionary<String, List<int>> stavkePoLokacijama = new Dictionary<string, List<int>>();
 

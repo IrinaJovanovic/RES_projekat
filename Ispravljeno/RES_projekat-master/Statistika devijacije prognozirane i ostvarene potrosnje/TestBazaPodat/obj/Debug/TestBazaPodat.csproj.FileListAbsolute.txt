@@ -8,3 +8,14 @@ C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_proje
 C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestBazaPodat\obj\Debug\TestBazaPodat.csprojResolveAssemblyReference.cache
 C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestBazaPodat\obj\Debug\TestBazaPodat.dll
 C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestBazaPodat\obj\Debug\TestBazaPodat.pdb
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestBazaPodat\bin\Debug\TestBazaPodat.dll
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestBazaPodat\bin\Debug\TestBazaPodat.pdb
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestBazaPodat\bin\Debug\BazaPodataka.dll
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestBazaPodat\bin\Debug\Common.dll
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestBazaPodat\bin\Debug\BazaPodataka.pdb
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestBazaPodat\bin\Debug\Common.pdb
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestBazaPodat\obj\Debug\TestBazaPodat.csprojResolveAssemblyReference.cache
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestBazaPodat\obj\Debug\TestBazaPodat.csproj.CoreCompileInputs.cache
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestBazaPodat\obj\Debug\TestBazaPodat.csproj.CopyComplete
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestBazaPodat\obj\Debug\TestBazaPodat.dll
+D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestBazaPodat\obj\Debug\TestBazaPodat.pdb

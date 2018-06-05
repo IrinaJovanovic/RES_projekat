@@ -20,7 +20,19 @@ namespace Common
         public Stavka()
         {
 
+
         }
+
+        public Stavka(string s, int i, int j)
+        {
+            reg = s;
+            sat = i;
+            load = j;
+            fajlUcitavanja = "";
+            vremeUcitavanja = "";
+
+        }
+
         #region prop
         [DataMember]
         public int SAT
