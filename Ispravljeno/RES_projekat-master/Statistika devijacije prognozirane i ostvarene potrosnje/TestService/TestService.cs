@@ -145,6 +145,14 @@ namespace TestService
         }
 
         [Test]
+        [TestCase("prog_2018_05_07.xml")]
+        public void ucitajXMLOK( string s)
+        {
+            Service ser = new Service();
+            ser.ucitajXML(s);
+        }
+
+        [Test]
         public void stavkeNisuKorektneTrue()
         {
             Service service = new Service();

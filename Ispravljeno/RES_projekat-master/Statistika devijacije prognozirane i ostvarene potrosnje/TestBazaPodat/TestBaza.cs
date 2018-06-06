@@ -12,6 +12,24 @@ namespace TestBazaPodat
     [TestFixture]
     public class TestBaza
     {
+
+        [Test]
+        [TestCase("SRB", 1, 3500, 3500)]
+        public void proveraRacunaDevijacijeOk(string s, int i, int j, int k)
+        {
+            DataStatistic data = new DataStatistic(s, i, j, k);
+            Assert.AreEqual((0), data.dev);
+        }
+
+        [Test]
+        [TestCase("SRB", 1, 3500, 854)]
+        public void proveraRacunaDevijacijeFail(string s, int i, int j, int k)
+        {
+            DataStatistic data = new DataStatistic(s, i, j, k);
+            Assert.AreNotEqual(1, data.dev);
+        }
+
+
         [Test]
         [TestCase(null, null)]
         [TestCase(null, "prog_2018_05_07.xml")]
