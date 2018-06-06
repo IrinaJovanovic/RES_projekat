@@ -56,19 +56,21 @@ namespace BazaPodataka
                 serializer.Serialize(textWriter, lista);
             }
         }
-        private void DeSerijalizuj(ListStavki lista, String imeFajla)
+        private ListStavki DeSerijalizuj(String imeFajla)
         {
+            ListStavki retVal = null;
             try
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(ListStavki));
                 string path = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), @"..\..\..\BazaPodataka\bin\Debug\bazaPodataka_" + imeFajla));
-                // string path= Directory.GetDirectories
                 FileStream fileStream = new FileStream(path, FileMode.Open);
-                lista = (ListStavki)(serializer.Deserialize(fileStream));
+                retVal = (ListStavki)(serializer.Deserialize(fileStream));
+
             }catch(Exception ex)
             {
                 Console.WriteLine(ex.ToString());
             }
+            return retVal;
 
         }
       
@@ -96,11 +98,9 @@ namespace BazaPodataka
                 }
             }
 
-            prognoziraneUBazi = new ListStavki();
-            
-            DeSerijalizuj(prognoziraneUBazi, "prognozirane.xml");
-            ostvareneUBazi = new ListStavki();
-            DeSerijalizuj(ostvareneUBazi, "ostvarene.xml");
+            prognoziraneUBazi = DeSerijalizuj("prognozirane.xml");
+            ostvareneUBazi = DeSerijalizuj("ostvarene.xml");
+
 
 
 

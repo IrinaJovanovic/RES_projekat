@@ -18,7 +18,7 @@ namespace Server
      
         public byte[] returnStatistic(string ime , string zem, int od, int to)       
         {
-            if(ime == null || zem == null || od == null || to == null)
+            if(ime == null || zem == null)
                 throw new ArgumentNullException();
 
             if(od <= 0 || to >= 25)
