@@ -13,3 +13,16 @@ D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije progno
 D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestService\obj\Debug\TestService.csproj.CopyComplete
 D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestService\obj\Debug\TestService.dll
 D:\RES\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestService\obj\Debug\TestService.pdb
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestService\obj\Debug\TestService.csprojResolveAssemblyReference.cache
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestService\bin\Debug\TestService.dll
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestService\bin\Debug\TestService.pdb
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestService\bin\Debug\Common.dll
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestService\bin\Debug\nunit.framework.dll
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestService\bin\Debug\Server.exe
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestService\bin\Debug\BazaPodataka.dll
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestService\bin\Debug\Common.pdb
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestService\bin\Debug\Server.pdb
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestService\bin\Debug\BazaPodataka.pdb
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestService\bin\Debug\BazaPodataka.xml
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestService\obj\Debug\TestService.dll
+C:\Users\Vuk\Desktop\RES_PROJEKAT\resprojekat\RES_projekat\Ispravljeno\RES_projekat-master\Statistika devijacije prognozirane i ostvarene potrosnje\TestService\obj\Debug\TestService.pdb
